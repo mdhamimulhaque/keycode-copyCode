@@ -2,10 +2,12 @@ const pressKey = document.querySelector(".press_key h2");
 const readKeyCode = document.querySelector(".key_code h2");
 const front = document.querySelector(".front");
 const clickCopy = document.querySelector("p");
+const mainDiv = document.querySelector("main");
 
 
 
 window.addEventListener("keydown",(e)=>{
+    mainDiv.style.display = "block";
     front.style.display = "none";
     pressKey.innerText = e.key; 
     readKeyCode.innerText = e.keyCode;
